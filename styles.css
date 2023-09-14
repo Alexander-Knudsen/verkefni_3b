@@ -29,7 +29,7 @@
 
 nav ul {
     text-align: center;
-   
+
 }
 
 nav ul li{
@@ -38,9 +38,11 @@ nav ul li{
 }
 
   main {
+  
+
     margin: 0 auto;
     padding: 1rem;
-    background-color: beige;
+    background-color:white;
     max-width: 1000px;
     min-height: 60vh;
 
@@ -56,8 +58,20 @@ nav ul li{
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
+    vertical-align: top;
   }
 
+  .column {
+    display: inline-block;
+    width: 48%; /* to allow some margin between the columns */
+    vertical-align: top;  /* aligns the content at the top */
+    margin-right: 2%;     /* margin between the columns */
+}
+
+/* Remove margin from the last column */
+.column:last-of-type {
+    margin-right: 0;
+}
 
 
   /* Reiknum stærð á öllum boxum sem border-box */
@@ -81,3 +95,6 @@ nav ul li{
     white-space: nowrap;
     width: 1px;
   }
+
+
+
