@@ -1,0 +1,83 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: block;
+
+    width: 100%;
+
+    background-color: #2f0505;
+    border-bottom: 8px solid
+    #ffe7ae;
+    
+    color:#ffe7ae;
+
+    padding: 1rem;
+
+    text-align: center;
+  }
+
+  nav {
+    background-color: #fff9ee;
+
+    border: 1rem;
+
+  }
+
+nav ul {
+    text-align: center;
+   
+}
+
+nav ul li{
+    display: inline;
+    color:#2f0505;
+}
+
+  main {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: beige;
+    max-width: 1000px;
+    min-height: 60vh;
+
+  }
+
+  footer{
+    background-color: #2f0505;
+    border: 0.5rem;
+    color: #fff9ee;
+  }
+
+  footer .content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+
+
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+  }
+  /* og látum erfast á allt */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
